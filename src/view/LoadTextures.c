@@ -100,15 +100,14 @@ void loadTexture()
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
     //carregar texturas
-    listTextures[0] = LoadBitmap(pathtextureEarth);
-    listTextures[1] = LoadBitmap(pathtextureJupiter);
-    listTextures[2] = LoadBitmap(pathtextureMars);
-    listTextures[3] = LoadBitmap(pathtextureMercury);
-    listTextures[4] = LoadBitmap(pathtextureMoon);
-    listTextures[5] = LoadBitmap(pathtextureNeptune);
+    listTextures[0] = LoadBitmap(pathtextureSun);
+    listTextures[1] = LoadBitmap(pathtextureMercury);
+    listTextures[2] = LoadBitmap(pathtextureVenus);
+    listTextures[3] = LoadBitmap(pathtextureEarth);
+    listTextures[4] = LoadBitmap(pathtextureMars);
+    listTextures[5] = LoadBitmap(pathtextureJupiter);
     listTextures[6] = LoadBitmap(pathtextureSaturn);
-    listTextures[7] = LoadBitmap(pathtextureStars1);
-    listTextures[8] = LoadBitmap(pathtextureStars2);
-    listTextures[9] = LoadBitmap(pathtextureSun);
-    listTextures[10] = LoadBitmap(pathtextureVenus);
+    listTextures[7] = LoadBitmap(pathtextureUranus);
+    listTextures[8] = LoadBitmap(pathtextureNeptune);
+    listTextures[9] = LoadBitmap(pathtextureStars1);
 }

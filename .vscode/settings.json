@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "bitmapinfoheader.h": "c"
+        "bitmapinfoheader.h": "c",
+        "constants.h": "c"
     }
 }
