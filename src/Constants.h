@@ -1,5 +1,5 @@
-#ifndef VARIAVEIS_H
-#define VARIAVEIS_H
+#ifndef CONSTANTS_H
+#define CONSTANTS_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -39,8 +39,6 @@ char *pathtextureVenus = "src/assets/2k_venus_surface.bmp";
 
 //----------------------------------Constants CONFIGURATION------------------------------------
 
-GLfloat adjusted;
-
 GLfloat angle, fAspect;
 
 GLfloat enviromentIlumination[] = {0, 0, 0, 1.0};
@@ -52,5 +50,10 @@ const GLfloat enviromentIluminationObject[] = {0.7f, 0.7f, 0.7f, 1.0f};
 const GLfloat diffuseIlunationObject[] = {0.8f, 0.8f, 0.8f, 1.0f};
 const GLfloat speculateIluminationObject[] = {1.0f, 1.0f, 1.0f, 1.0f};
 const GLfloat autoBright[] = {100.0f};
+
+//----------------------------------VIEWER CONFIGURATION------------------------------------
+
+GLfloat rotationX, rotationY, rotationZ;
+GLfloat viewerX, viewerY, viewerZ;
 
 #endif

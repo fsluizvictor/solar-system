@@ -30,7 +30,24 @@ void resize(GLsizei w, GLsizei h)
     glViewport(0, 0, w, h);
 
     // Calcula a correção de aspecto
-    adjusted = (GLfloat)w / (GLfloat)h;
+    fAspect = (GLfloat)w / (GLfloat)h;
 
     parametersVisualization();
+}
+
+void viewer()
+{
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+
+    glTranslatef(-viewerX * 0.5, -viewerY * 0.5, -viewerZ * 0.5);
+    glRotatef(rotationX, 1, 0, 0);
+    glRotatef(rotationY, 0, 1, 0);
+    glRotatef(rotationZ, 0, 0, 1);
+}
+
+void movimentation()
+{
+    viewer();
+    glutPostRedisplay();
 }

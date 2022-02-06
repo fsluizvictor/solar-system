@@ -10,7 +10,6 @@ void executeView(int argc, char *argv[])
     glutInitWindowSize(1800, 1200);
     glutInitWindowPosition(100, 100);
     glutCreateWindow("Solar System");
-    imprimeGuia();
     glutDisplayFunc(drawOrbitsSolarSystem);
     glutReshapeFunc(resize);
 }

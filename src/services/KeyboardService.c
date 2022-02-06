@@ -8,10 +8,15 @@ void keyPressed(unsigned char key, int x, int y)
         exit(0);
         break;
     case TOP_VIEW:
+        viewerZ = 1000;
         break;
     case SIDE_VIEW:
+        viewerZ = -1000;
         break;
     default:
         break;
     }
+    glLoadIdentity();
+    gluLookAt(viewerX, viewerY, viewerZ, 0, 0, 0, 0, 1, 0);
+    glutPostRedisplay();
 }
