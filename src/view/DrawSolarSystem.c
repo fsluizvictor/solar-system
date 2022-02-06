@@ -95,7 +95,7 @@ void showOrbits()
     drawOrbit(127, 127); // NETUNO
 }
 
-void orbitsSolarSystem()
+void drawOrbitsSolarSystem()
 {
     glDrawBuffer(GL_BACK);
     // Limpa a janela de visualizao com a cor de fundo especificada

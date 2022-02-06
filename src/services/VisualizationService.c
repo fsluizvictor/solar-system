@@ -1,14 +1,7 @@
 #include "../Constants.h"
 
-// Inicializa parâmetros de rendering
-void Inicializa(void)
-{
-    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-    angle = 45;
-}
-
 // Função usada para especificar o volume de visualização
-void EspecificaParametrosVisualizacao(void)
+void parametersVisualization(void)
 {
     // Especifica sistema de coordenadas de projeção
     glMatrixMode(GL_PROJECTION);
@@ -25,4 +18,19 @@ void EspecificaParametrosVisualizacao(void)
 
     // Especifica posição do observador e do alvo
     gluLookAt(0, 80, 200, 0, 0, 0, 0, 1, 0);
+}
+
+void resize(GLsizei w, GLsizei h)
+{
+    // Para previnir uma divisão por zero
+    if (h == 0)
+        h = 1;
+
+    // Especifica as dimensões da viewport
+    glViewport(0, 0, w, h);
+
+    // Calcula a correção de aspecto
+    adjusted = (GLfloat)w / (GLfloat)h;
+
+    parametersVisualization();
 }

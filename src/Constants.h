@@ -39,6 +39,8 @@ char *pathtextureVenus = "src/assets/2k_venus_surface.bmp";
 
 //----------------------------------Constants CONFIGURATION------------------------------------
 
+GLfloat adjusted;
+
 GLfloat angle, fAspect;
 
 GLfloat enviromentIlumination[] = {0, 0, 0, 1.0};
