@@ -1,6 +1,3 @@
-#ifndef CONSTANTS_H
-#define CONSTANTS_H
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -8,9 +5,11 @@
 #include <GL/freeglut.h>
 #include <SOIL/SOIL.h>
 #include <SDL/SDL.h>
-#include <SDL/SDL_mixer.h>
 #include <math.h>
 #include <assert.h>
+
+#ifndef CONSTANTS_H
+#define CONSTANTS_H
 
 #include "./entities/BitMapInfoHeader.h"
 
@@ -19,6 +18,8 @@
 #define EXIT 27
 #define TOP_VIEW 49
 #define SIDE_VIEW 50
+#define KEY_LEFT GLUT_KEY_LEFT
+#define KEY_RIGHT GLUT_KEY_RIGHT
 
 //----------------------------------TEXTURE CONFIGURATION------------------------------------
 

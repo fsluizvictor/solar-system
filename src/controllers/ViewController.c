@@ -1,5 +1,4 @@
 #include "../view/DrawSolarSystem.c"
-#include "../services/VisualizationService.c"
 
 void executeView(int argc, char *argv[])
 {
@@ -11,5 +10,4 @@ void executeView(int argc, char *argv[])
     glutInitWindowPosition(100, 100);
     glutCreateWindow("Solar System");
     glutDisplayFunc(drawOrbitsSolarSystem);
-    glutReshapeFunc(resize);
 }

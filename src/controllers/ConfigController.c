@@ -1,4 +1,3 @@
-#include "../Constants.h"
 #include "../services/VisualizationService.c"
 #include "../services/KeyboardService.c"
 #include "../view/LoadTextures.c"
@@ -19,15 +18,18 @@ void initVariables()
     viewerY = 0;
     viewerZ = 150;
 
-    angle = 50;
+    angle = 120;
     loadTexture();
 }
 
 void executeConfigs()
 {
-    //glutSpecialFunc(SpecialKeyboard);
+
+    glutReshapeFunc(resize);
+    glutSpecialFunc(keySpecialPressed);
     glutKeyboardFunc(keyPressed);
-    glutMotionFunc(movimentation);
+    glutMotionFunc(movement);
+
     initVariables();
 
     glutIdleFunc(refresh);

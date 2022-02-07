@@ -1,41 +1,6 @@
 #include "../Constants.h"
 
-// Função usada para especificar o volume de visualização
-void parametersVisualization(void)
-{
-    // Especifica sistema de coordenadas de projeção
-    glMatrixMode(GL_PROJECTION);
-    // Inicializa sistema de coordenadas de projeção
-    glLoadIdentity();
-
-    // Especifica a projeção perspectiva
-    gluPerspective(angle, fAspect, 0.5, 500);
-
-    // Especifica sistema de coordenadas do modelo
-    glMatrixMode(GL_MODELVIEW);
-    // Inicializa sistema de coordenadas do modelo
-    glLoadIdentity();
-
-    // Especifica posição do observador e do alvo
-    gluLookAt(0, 80, 200, 0, 0, 0, 0, 1, 0);
-}
-
-void resize(GLsizei w, GLsizei h)
-{
-    // Para previnir uma divisão por zero
-    if (h == 0)
-        h = 1;
-
-    // Especifica as dimensões da viewport
-    glViewport(0, 0, w, h);
-
-    // Calcula a correção de aspecto
-    fAspect = (GLfloat)w / (GLfloat)h;
-
-    parametersVisualization();
-}
-
-void viewer()
+void viewerPosition(void)
 {
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
@@ -46,8 +11,28 @@ void viewer()
     glRotatef(rotationZ, 0, 0, 1);
 }
 
-void movimentation()
+void parametersVisualization(void)
 {
-    viewer();
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluPerspective(angle, fAspect, 0.5, 500);
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+    gluLookAt(0, 80, 200, 0, 0, 0, 0, 1, 0);
+    viewerPosition();
+}
+
+void resize(GLsizei w, GLsizei h)
+{
+    if (h == 0)
+        h = 1;
+    glViewport(0, 0, w, h);
+    fAspect = (GLfloat)w / (GLfloat)h;
+    parametersVisualization();
+}
+
+void movement()
+{
+    viewerPosition();
     glutPostRedisplay();
 }
