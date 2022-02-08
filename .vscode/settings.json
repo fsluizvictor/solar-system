@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "bitmapinfoheader.h": "c",
-        "constants.h": "c"
+        "constants.h": "c",
+        "*.tcc": "c",
+        "sdl_mixer.h": "c"
     }
 }
