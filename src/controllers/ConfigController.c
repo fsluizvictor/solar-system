@@ -18,7 +18,7 @@ void initVariables()
     viewerY = 0;
     viewerZ = 150;
 
-    angle = 120;
+    angle = 100;
     loadTexture();
 }
 

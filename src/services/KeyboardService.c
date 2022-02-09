@@ -9,9 +9,11 @@ void keyPressed(unsigned char key, int x, int y)
         break;
     case TOP_VIEW:
         viewerZ = 100;
+        viewerX = 0;
         break;
     case SIDE_VIEW:
-        viewerZ = -100;
+        viewerZ = 0;
+        viewerX = 100;
         break;
     default:
         break;
@@ -25,11 +27,11 @@ void keySpecialPressed(int key, int x, int y)
 {
     switch (key)
     {
-    case KEY_LEFT:
+    case KEY_RIGHT:
         glRotatef(rotationY, 0, 1, 0);
         rotationY++;
         break;
-    case KEY_RIGHT:
+    case KEY_LEFT:
         glRotatef(rotationX, 1, 0, 0);
         rotationX++;
         break;

@@ -25,18 +25,18 @@
 
 GLuint listTextures[11];
 
-char *pathtextureEarth = "src/assets/2k_earth_daymap.bmp";
-char *pathtextureJupiter = "src/assets/2k_jupiter.bmp";
-char *pathtextureMars = "src/assets/2k_mars.bmp";
-char *pathtextureMercury = "src/assets/2k_mercury.bmp";
-char *pathtextureMoon = "src/assets/2k_moon.bmp";
-char *pathtextureNeptune = "src/assets/2k_neptune.bmp";
-char *pathtextureSaturn = "src/assets/2k_saturn.bmp";
-char *pathtextureStars1 = "src/assets/2k_stars_milky_way.bmp";
-char *pathtextureStars2 = "src/assets/2k_stars.bmp";
-char *pathtextureSun = "src/assets/2k_sun.bmp";
-char *pathtextureUranus = "src/assets/2k_uranus.bmp";
-char *pathtextureVenus = "src/assets/2k_venus_surface.bmp";
+char *pathtextureEarth = "assets/earth.bmp";
+char *pathtextureJupiter = "assets/jupiter.bmp";
+char *pathtextureMars = "assets/mars.bmp";
+char *pathtextureMercury = "assets/mercury.bmp";
+char *pathtextureMoon = "assets/moon.bmp";
+char *pathtextureNeptune = "assets/neptune.bmp";
+char *pathtextureSaturn = "assets/saturn.bmp";
+//char *pathtextureStars1 = "assets/background.bmp";
+//char *pathtextureStars2 = "assets/2k_stars_milky_way.bmp";
+char *pathtextureSun = "assets/sun.bmp";
+char *pathtextureUranus = "assets/uranus.bmp";
+char *pathtextureVenus = "assets/venus.bmp";
 
 //----------------------------------Constants CONFIGURATION------------------------------------
 
