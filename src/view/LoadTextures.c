@@ -109,5 +109,5 @@ void loadTexture()
     listTextures[6] = LoadBitmap(pathtextureSaturn);
     listTextures[7] = LoadBitmap(pathtextureUranus);
     listTextures[8] = LoadBitmap(pathtextureNeptune);
-    listTextures[9] = LoadBitmap(pathtextureStars1);
+    //listTextures[9] = LoadBitmap(pathtextureStars1);
 }
